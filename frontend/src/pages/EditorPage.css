@@ -1,0 +1,124 @@
+/* Layout */
+.mainWrap {
+  display: flex;
+  height: 100vh;
+  background: #0f111a;
+  color: #e6edf3;
+  font-family: 'Courier New', monospace;
+}
+
+/* Sidebar */
+.lSide {
+  width: 260px;
+  background: rgba(20, 22, 34, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  padding: 1.2rem;
+  border-right: 1px solid rgba(0, 255, 150, 0.08);
+}
+
+.btnGroup {
+  margin-top: auto; /* pushes it to bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space BETWEEN buttons */
+}
+
+/* Inner content */
+.lSideInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logoImage {
+  height: 100px;
+  opacity: 0.9;
+}
+
+/* Title */
+.lSideInner h3 {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #00d084; /* softer green */
+  letter-spacing: 1px;
+}
+
+/* Connected users */
+.connected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Client */
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.userName {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+/* Copy button (subtle neon) */
+.copyBtn {
+  background: rgba(0, 208, 132, 0.15);
+  color: #00d084;
+  border: 1px solid rgba(0, 208, 132, 0.3);
+}
+
+.copyBtn:hover {
+  background: rgba(0, 208, 132, 0.25);
+}
+
+/* Leave button */
+.leaveBtn {
+  background: rgba(255, 77, 77, 0.15);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 77, 77, 0.3);
+}
+
+.leaveBtn:hover {
+  background: rgba(255, 77, 77, 0.25);
+}
+
+/* Editor area */
+.mainSide {
+  flex: 1;
+  background: rgba(15, 17, 26, 0.85);
+  padding: 14px;
+  overflow: hidden;
+}
+
+
+.client:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}

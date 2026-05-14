@@ -1,0 +1,23 @@
+/* RESET ROOT for full screen app */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* REMOVE restrictive layout */
+#root {
+  width: 100%;
+}
+
+/* CodeMirror FIX */
+.CodeMirror {
+  height: 100% !important;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Optional: smoother look */
+.CodeMirror-scroll {
+  padding: 10px 0;
+}
